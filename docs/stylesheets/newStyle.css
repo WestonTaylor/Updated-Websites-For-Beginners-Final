@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-3/nat271.cur), auto !important;} /* End https://www.cursors-4u.com */
+.header {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    font-size: larger;
+    color: black;
+    background-color: royalblue;
+    border: solid white 4px;
+    align-items: center;
+}
+
+.headerPic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerPic img {
+    height: max-content;
+}
+
+.container {
+    background-color: royalblue;
+    border: solid white 4px;
+}
+
+.navbar {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    border: solid white 4px;
+    background-color: royalblue;
+    font-size: larger;
+    text-align: center;
+    top: 0%;
+    position: sticky;
+}
+
+.footer {
+    box-sizing: border-box;
+    font-size: larger;
+    text-align: center;
+    background-color: royalblue;
+    border: solid white 4px;
+}
+
+.footer .container {
+    border: none;
+}
+
+.footerColumn {
+    font-size: medium;
+    text-align: center;
+    vertical-align: middle;
+    border-right: solid mediumblue 4px;
+    border-left: solid mediumblue 4px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:visited {
+    color: white;
+}
+
+.footerCredit {
+    border-right: none;
+    border-left: none;
+}
+
+.footerSocial {
+    border-left: none;
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+}
+
+.footerColumn {
+    padding: 10px 0px 10px 0px;
+}
+
+.footerSocial {
+    border-right: none;
+}
+
+a {
+    color: royalblue;
+}
+
+a:visited {
+    color: black;
+    text-underline-position: below 0px;
+}
+
+a:hover {
+    background-color: mediumblue;
+}
+
+.fa {
+    width: 50px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity: 70%;
+  }
+
+  .fa:hover {
+    text-decoration: none;
+    opacity: 100%;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+  }
+
+  .fa-instagram {
+    background-image: linear-gradient(to bottom left, #803AB3, #E60B18, #EFDA55);
+  }
+
+h, h1, h2, h3, h4, h5, h6, label{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+p, text, a, span, .btn, .form-control::placeholder {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 16px;
+}
+
+.customImageSize img {
+    height: 80%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(255, 217, 5, 0.897);
+}
+
+.video video {
+    height: 250px;
+    width: 100%;
+}
+
+.googleEmbed {
+    height: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:575px) {
+    .displayOnMediumAndBigger {
+        display: none;
+    }
+
+    .displayBetween576And992 {
+        display: none;
+    }
+
+    .displayBetween576And768 {
+        display: none;
+    }
+}
+
+  @media only screen and (min-width: 576px) {
+    .displayOnSmallOnly {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+      .miniHeader {
+          display: none;
+      }
+
+      .displayBetween768And992 {
+          display: none;
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+      .tinyHeader {
+          display: none;
+      }
+
+      .displayBetween576And768 {
+          display: none;
+      }
+
+      .displayUnder768 {
+          display: none;
+      }
+  }
+
+
+@media only screen and (max-width: 991px) {
+    .displayOnLargeAndBigger {
+        display: none;
+    }
+    .fullHeader {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .displayOnLargeAndBigger {
+        display: block;
+    }
+
+    .displayOnMediumAndSmaller {
+        display: none;
+    }
+
+    .miniHeader {
+        display: none;
+    }
+
+    .displayBetween768And992 {
+        display: none;
+    }
+
+    .displayBetween576And992 {
+        display: none;
+    }
+
+    .displayBetween768And992 {
+        display: none;
+    }
+}
+
+.form-control {
+    background-color: royalblue;
+    border: solid white 3px;
+    color: black;
+}
+
+.formMessage {
+  background-color: royalblue;
+  border: solid white 3px;
+}
+
+.card::placeholder {
+  color: black;
+}
+
+.form-control::placeholder {
+  color: black;
+}
+
+.formMessage::placeholder {
+  color: black;
+}
+
+.card:focus {
+  background-color: cornflowerblue;
+  border: solid white 3px;
+}
+
+.form-control:focus {
+  background-color: cornflowerblue;
+  border: solid white 3px;
+}
+
+.formMessage:focus {
+  background-color: cornflowerblue;
+  border: solid white 3px;
+}
+
+textarea:focus-visible {
+  outline-offset: none;
+  outline: none
+}
+
+.btn-link {
+  color: white;
+}
+
+.formMessage {
+    width: 100%;
+}
