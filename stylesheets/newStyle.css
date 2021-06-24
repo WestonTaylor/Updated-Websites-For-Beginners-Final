@@ -6,3 +6,123 @@
 .reducedSizeImage img {
     height: 80%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-3/nat271.cur), auto !important;} /* End https://www.cursors-4u.com */
+.header {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    font-size: larger;
+    line-height: 100px;
+    color: black;
+    background-color: royalblue;
+    border: solid yellow 4px;
+}
+
+.headerPic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerPic img {
+    height: max-content;
+}
+
+.container {
+    background-color: royalblue;
+    border: solid yellow 4px;
+}
+
+.navbar {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    border: solid yellow 4px;
+    background-color: royalblue;
+    font-size: larger;
+    text-align: center;
+    top: 0%;
+    position: sticky;
+}
+
+.footer {
+    box-sizing: border-box;
+    font-size: larger;
+    text-align: center;
+    background-color: royalblue;
+    border: solid yellow 4px;
+}
+
+.footer .container {
+    border: none;
+}
+
+.footerColumn {
+    font-size: medium;
+    text-align: center;
+    vertical-align: middle;
+    border-right: solid mediumblue 2px;
+}
+
+.footerSocial {
+    border-right: none;
+}
+
+a {
+    color: royalblue;
+}
+
+a:visited {
+    color: black;
+    text-underline-position: below 0px;
+}
+
+a:hover {
+    background-color: white;
+}
+
+.fa {
+    width: 50px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity: 70%;
+  }
+
+  .fa:hover {
+    text-decoration: none;
+    opacity: 100%;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+  }
+
+  .fa-instagram {
+    background-image: linear-gradient(to bottom left, #803AB3, #E60B18, #EFDA55);
+  }
+
+h {
+    text-decoration: underline;
+}
+
+p, text, .navbar {
+    font-family: 'open sans', sans-serif;
+}
+
+h, a, footer, .header {
+    font-family: 'Lora', serif;
+}
+
+h, h1, h2, h3, h4, h5, h6, a, p, text {
+    color: white;
+}
