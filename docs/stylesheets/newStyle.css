@@ -252,7 +252,6 @@ textarea:focus-visible {
       }
   }
 
-
 @media only screen and (max-width: 991px) {
     .displayOnLargeAndBigger {
         display: none;
@@ -282,8 +281,5 @@ textarea:focus-visible {
     .displayBetween576And992 {
         display: none;
     }
-
-    .displayBetween768And992 {
-        display: none;
-    }
 }
+
