@@ -13,30 +13,52 @@
 </head>
 <body>
     <header class="header headerPic">
-        <h1>
+        <h1 class="fullHeader">
             Compassion For Sheltered Animals (CSA) - Exeter High School
+        </h1>
+        <h1 class="miniHeader">
+            Compassion For Sheltered Animals (CSA)
+        </h1>
+        <h1 class="tinyHeader">
+            Compassion For Sheltered Animals
         </h1>
         <a href="https://www.facebook.com/groups/697547533591116" target="_blank" id="headerpiclink">
             <img src="./images/headerDogs.jpg">
         </a>
     </header>
     <br>
-    <nav class="navbar">
-        <a href="./index.html" id="home">Home</a>
-        <a href="./about.html" id="about">About</a>
-        <a href="./contact.html" id="contact">Contact</a>
-        <text id="header-social">Social Media:</text>
-        <a href="https://www.facebook.com/groups/697547533591116" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light navbarTest sticky-top displayOnSmallOnly">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbarTest sticky-top displayOnMediumAndBigger">
+        <a class="navbar-brand" href="#">Navbar:</a>
+        <a link href="./index.html">
+          Home
+        </a>
+        <a link href="./about.html">
+          About
+        </a>
+        <a link href="./contact.html">
+          Contact Us
+        </a>
+      </nav>
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 reducedSizeImage">
+            <div class="col-md-4 customImageSize">
                 <img src="./images/aboutTopLeft.jpg">
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <h>The background of CSA</h>
                 <br>
                 <br>
@@ -45,20 +67,30 @@
                 <br>
                 <h>Click the picture to learn more about Exeter High School:</h>
             </div>
-            <div class="col-sm-4 reducedSizeImage">
-                <img src="./images/aboutTopRight.jpg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="./images/aboutBottomLeft.jpg">
-            </div>
-            <div class="col-sm-4">
+            <div class="col-md-4 customImageSize displayUnder768">
                 <a href="https://euhs.exeter.k12.ca.us/" target="_blank">
                     <img src="./images/aboutBottomCenter.jpg">
                 </a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4 customImageSize">
+                <img src="./images/aboutTopRight.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 customImageSize">
+                <img src="./images/aboutBottomLeft.jpg">
+            </div>
+            <div class="col-md-4 customImageSize displayBetween768And992">
+                <a href="https://euhs.exeter.k12.ca.us/" target="_blank">
+                    <img src="./images/aboutBottomCenter.jpg">
+                </a>
+            </div>
+            <div class="col-md-4 customImageSize displayOnLargeAndBigger">
+                <a href="https://euhs.exeter.k12.ca.us/" target="_blank">
+                    <img src="./images/aboutBottomCenter.jpg">
+                </a>
+            </div>
+            <div class="col-md-4 customImageSize">
                 <img src="./images/aboutBottomRight.jpg">
             </div>
         </div>
@@ -71,7 +103,7 @@
                 <text>If you would like to learn more about how great working with CSA is and why so many people are actively engaged with our club for years after joining, then please check out this video from our partner group Heartland Animal Rescue.</text>
             </div>
             <div class="col-sm-6 video">
-                <video height="180" width="600" controls>
+                <video controls>
                     <source src="./video/9convert.com - Why Everyone Should Own A Dog 2_480p.mp4" type="video/mp4" controls muted>
                 </video>
             </div>

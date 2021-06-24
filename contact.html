@@ -13,23 +13,45 @@
 </head>
 <body>
     <header class="header headerPic">
-        <h1>
+        <h1 class="fullHeader">
             Compassion For Sheltered Animals (CSA) - Exeter High School
+        </h1>
+        <h1 class="miniHeader">
+            Compassion For Sheltered Animals (CSA)
+        </h1>
+        <h1 class="tinyHeader">
+            Compassion For Sheltered Animals
         </h1>
         <a href="https://www.facebook.com/groups/697547533591116" target="_blank" id="headerpiclink">
             <img src="./images/headerDogs.jpg">
         </a>
     </header>
     <br>
-    <nav class="navbar">
-        <a href="./index.html" id="home">Home</a>
-        <a href="./about.html" id="about">About</a>
-        <a href="./contact.html" id="contact">Contact</a>
-        <text id="header-social">Social Media:</text>
-        <a href="https://www.facebook.com/groups/697547533591116" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light navbarTest sticky-top displayOnSmallOnly">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbarTest sticky-top displayOnMediumAndBigger">
+        <a class="navbar-brand" href="#">Navbar:</a>
+        <a link href="./index.html">
+          Home
+        </a>
+        <a link href="./about.html">
+          About
+        </a>
+        <a link href="./contact.html">
+          Contact Us
+        </a>
+      </nav>
     <br>
     <div class="container">
         <form>
@@ -130,7 +152,7 @@
                 <option value="Email">Email</option>
               </select>
             </div>
-            <div class="displayOnMediumOnly">
+            <div class="displayOnMediumAndSmaller">
               <label for="inputPrefferedContactMethod">Best Contact Method:    </label>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Call">
@@ -158,36 +180,38 @@
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 needBottomBorder">
                     <h>Main Adoption Event Location</h>
-                    <p>Tractor Supply Co. in Tulare is the usual host of CSA's adoption events. These events typically take place on the first Saturday of each month, and run from 8am to 5pm. Their normal business hours and contact information can be found here:</p>
+                    <br>
+                    <br>
+                    <p>Tractor Supply Co. in Tulare is the usual host of CSA's adoption events. These events typically take place on the first Saturday of each month, and run from 8am to 5pm. Their normal business hours and contact information can be found here:
                     <a href="https://www.tractorsupply.com/tsc/store_Tulare-CA-93274_1269?zipCode=92648&state=&city=&cm_mmc=SEM-_-Google-_-DynamicAdGroups-_-AllSiteTSCExtAd&gclid=CjwKCAjwnPOEBhA0EiwA609ReQAV5nakkR1j8IzUi6VdMJt1Hn2u2K4OBwnLKtgIGFoyDGd07CE87hoCz5AQAvD_BwE">
                         Tractor Supply Co.
                     </a>
-                    <p>Directions to this location are on the right side of the screen.</p>
+                </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 customImageSize">
                     <img src="./images/contactTractorSupply.jpg">
                 </div>
                 <div class="col-sm-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.572685920354!2d-119.31950268472615!3d36.225579980071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80952c7114c10ddb%3A0xf30bc24f789a8a71!2sTractor%20Supply%20Co.!5e0!3m2!1sen!2sus!4v1620875368072!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" id="tractor-supply-embed"></iframe>
+                    <iframe class="googleEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.572685920354!2d-119.31950268472615!3d36.225579980071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80952c7114c10ddb%3A0xf30bc24f789a8a71!2sTractor%20Supply%20Co.!5e0!3m2!1sen!2sus!4v1620875368072!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <h>Local Shelter Partner</h>
-                    <p>CSA has been working with Porterville Animal Shelter (PAS) since 2013. CSA chose to work with PAS because they only accept work through volunteers, which guarantees that those working there truly care about animals.</p>
-                    <p>Their business hours and contact information can be found here: 
+                    <br>
+                    <br>
+                    <p>CSA has been working with Porterville Animal Shelter (PAS) since 2013. CSA chose to work with PAS because they only accept work through volunteers, which guarantees that those working there truly care about animals. Their business hours and contact information can be found here: 
                     <a href="http://www.ci.porterville.ca.us/depts/Police/animal-control.cfm">
-                        Porterville Animal Shelter
+                        Porterville Animal Shelter.
                     </a>
-                        . Their address/location is provided on the right side of the screen.</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 customImageSize">
                     <img src="./images/contactPortervilleAnimalShelter.jpg">
                 </div>
                 <div class="col-sm-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.8855308905154!2d-119.02008518524234!3d36.07189601605573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80eab840bb6cce01%3A0x192b57507f8c3471!2s350%20N%20D%20St%2C%20Porterville%2C%20CA%2093257!5e0!3m2!1sen!2sus!4v1620875061506!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" id="pas-embed"></iframe>
+                    <iframe class="googleEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.8855308905154!2d-119.02008518524234!3d36.07189601605573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80eab840bb6cce01%3A0x192b57507f8c3471!2s350%20N%20D%20St%2C%20Porterville%2C%20CA%2093257!5e0!3m2!1sen!2sus!4v1620875061506!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
