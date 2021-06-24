@@ -2,6 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-3/nat271.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+body {
+    background-color: rgba(255, 217, 5, 0.897);
+}
+
+.container {
+    background-color: royalblue;
+    border: solid white 4px;
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: royalblue;
+}
+
+a:visited {
+    color: black;
+    text-underline-position: below 0px;
+}
+
+a:hover {
+    background-color: mediumblue;
+}
+
+h, h1, h2, h3, h4, h5, h6, label{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+p, text, a, span, .btn, .form-control::placeholder {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 16px;
+}
+
 .header {
     box-sizing: border-box;
     height: 100px;
@@ -22,13 +62,9 @@
     height: max-content;
 }
 
-.container {
-    background-color: royalblue;
-    border: solid white 4px;
-}
-
 .navbar {
-    clear: both;
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
     padding: 25px;
@@ -36,8 +72,18 @@
     background-color: royalblue;
     font-size: larger;
     text-align: center;
-    top: 0%;
-    position: sticky;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:visited {
+    color: white;
+}
+
+.noHoverBG a:hover {
+    background-color: none;
 }
 
 .footer {
@@ -58,14 +104,7 @@
     vertical-align: middle;
     border-right: solid mediumblue 4px;
     border-left: solid mediumblue 4px;
-}
-
-.navbar a {
-    color: white;
-}
-
-.navbar a:visited {
-    color: white;
+    padding: 10px 0px 10px 0px;
 }
 
 .footerCredit {
@@ -77,30 +116,8 @@
     border-left: none;
 }
 
-.container .row {
-    display: flex;
-    align-items: center;
-}
-
-.footerColumn {
-    padding: 10px 0px 10px 0px;
-}
-
 .footerSocial {
     border-right: none;
-}
-
-a {
-    color: royalblue;
-}
-
-a:visited {
-    color: black;
-    text-underline-position: below 0px;
-}
-
-a:hover {
-    background-color: mediumblue;
 }
 
 .fa {
@@ -129,25 +146,9 @@ a:hover {
     background-image: linear-gradient(to bottom left, #803AB3, #E60B18, #EFDA55);
   }
 
-h, h1, h2, h3, h4, h5, h6, label{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 20px;
-}
-
-p, text, a, span, .btn, .form-control::placeholder {
-    font-family: 'Merriweather', serif;
-    color: white;
-    font-size: 16px;
-}
-
 .customImageSize img {
     height: 80%;
     width: 100%;
-}
-
-body {
-    background-color: rgba(255, 217, 5, 0.897);
 }
 
 .video video {
@@ -155,13 +156,56 @@ body {
     width: 100%;
 }
 
-.googleEmbed {
-    height: inherit;
+.card:focus {
+    background-color: cornflowerblue;
+    border: solid white 3px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
+.card::placeholder {
+  color: black;
+}
+
+.btn-link {
+    color: white;
+  }
+
+.form-control {
+    background-color: royalblue;
+    border: solid white 3px;
+    color: black;
+}
+
+.form-control:focus {
+    background-color: cornflowerblue;
+    border: solid white 3px;
+  }
+
+.form-control::placeholder {
+  color: black;
+}
+
+.formMessage {
+  background-color: royalblue;
+  border: solid white 3px;
+  width: 100%;
+}
+
+.formMessage:focus {
+    background-color: cornflowerblue;
+    border: solid white 3px;
+  }
+
+.formMessage::placeholder {
+  color: black;
+}
+
+textarea:focus-visible {
+  outline-offset: none;
+  outline: none
+}
+
+.googleEmbed {
+    height: inherit;
 }
 
 @media only screen and (max-width:575px) {
@@ -242,55 +286,4 @@ body {
     .displayBetween768And992 {
         display: none;
     }
-}
-
-.form-control {
-    background-color: royalblue;
-    border: solid white 3px;
-    color: black;
-}
-
-.formMessage {
-  background-color: royalblue;
-  border: solid white 3px;
-}
-
-.card::placeholder {
-  color: black;
-}
-
-.form-control::placeholder {
-  color: black;
-}
-
-.formMessage::placeholder {
-  color: black;
-}
-
-.card:focus {
-  background-color: cornflowerblue;
-  border: solid white 3px;
-}
-
-.form-control:focus {
-  background-color: cornflowerblue;
-  border: solid white 3px;
-}
-
-.formMessage:focus {
-  background-color: cornflowerblue;
-  border: solid white 3px;
-}
-
-textarea:focus-visible {
-  outline-offset: none;
-  outline: none
-}
-
-.btn-link {
-  color: white;
-}
-
-.formMessage {
-    width: 100%;
 }
